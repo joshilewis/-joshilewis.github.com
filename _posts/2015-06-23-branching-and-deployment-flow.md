@@ -1,4 +1,12 @@
-# Branching and Deployment Flow #
+---
+layout: post
+title: "Branching and Deployment Flow"
+description: ""
+category: Software Development
+tags: []
+---
+{% include JB/setup %}
+
 TL;DR: We can deploy and test each feature in our dev environment independently and in combination before promotion. This is done through some simple Git and Jenkins setup and simple team discipline. Promotion-ready features are not blocked by 'immature' work-in-progress (WIP), but WIP is still independently testable. The build server tells us when Feature Branches are out of date.
 
 ----------

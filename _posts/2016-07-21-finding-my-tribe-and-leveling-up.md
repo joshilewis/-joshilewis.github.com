@@ -1,7 +1,7 @@
 =Finding My Tribe and Leveling Up=
 
 **TL;DR:** There are many channels available for leveling-up and for finding your tribe (for me they're related), some of them less 'traditional'. These are some that I use:
- - In-person gatherings (meetups, conferences etc)
+ - In-person gatherings ([meetups](meetup.com), conferences etc)
  - Twitter
  - Instant messaging ([Slack](http://slack.com)/[HipChat](http://hipchat.com)/[Jabbr](http://jabbr.net)/[Gitter](http://gitter.im)/IRC etc)
  - Websites ([MSDN](http://msdn.microsoft.com)/[Stack Overflow](http://stackoverflow.com) etc)
@@ -9,7 +9,7 @@
 
 --------
 
-This post was prompted by several things: My interview for [Source](http://source.technology/);  a conversation I had with two developers I am coaching, who had been thrown into the deep-end on a project with new, unfamiliar technology, and very little support from their company; a conversation with an acquaintance in Cape Town about resources available to one of his employees for leveling up.
+This post was prompted by several things: My interview for [Source](http://source.technology/);  a conversation I had with two developers I am coaching, who had been thrown into the deep-end on a project with new, unfamiliar technology, and very little support from their company; a conversation with an acquaintance about resources available for leveling up.
 
 A number of years ago, I felt very lonely and misunderstood as a professional developer. I care deeply about my craft and self-development and self-improvement, but struggled to find people with a similar outlook and experience. Part of my frustration was not having anyone with whom to discuss things and soundboard ideas.
 

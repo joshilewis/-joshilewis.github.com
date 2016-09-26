@@ -13,7 +13,7 @@ This post was prompted by several things: My interview for [Source](http://sourc
 
 A number of years ago, I felt very lonely and misunderstood as a professional developer. I care deeply about my craft and self-development and self-improvement, but struggled to find people with a similar outlook and experience. Part of my frustration was not having anyone with whom to discuss things and soundboard ideas.
 
-I'm glad to say that today my life is totally different. I belong to several tribes, both in meatspace and virtual, have access to a lot more people and resources, with lots of different experiences and points of view. In fact I could probably spend my days only in debate and discussion now, without doing any other work.
+I'm glad to say that today my life is totally different. I belong to several tribes, both in meatspace and virtual, have access to a lot more people and resources, with lots of different experiences and points of view. In fact I could probably spend my days only in debate and discussion now, without doing any other work. Besides the communities and resources discussed below, I'm extremely fortunate to be working at [nReality](nreality.com) where I have amazing colleagues, as well as access to a broad range of people through my training and coaching work.
 
 The resources I use the most these days to level up are 
 - Meatspace Events

@@ -1,0 +1,548 @@
+[
+    {
+        "type": "message",
+        "user": "U0KD1MESZ",
+        "text": "If you're having a hectic time, spare a moment today to think of the poor souls who have to keep Pokemon Go's servers up.",
+        "ts": "1468312335.001246",
+        "reactions": [
+            {
+                "name": "laughing",
+                "users": [
+                    "U0C8K8C6P",
+                    "U0QUFPKCN"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U1K651NRJ",
+        "text": ":laughing: they can wipe the sweat on their brows with the stock certificates",
+        "ts": "1468312748.001247",
+        "reactions": [
+            {
+                "name": "smile",
+                "users": [
+                    "U06QL2ZEX",
+                    "U0C8K8C6P",
+                    "U0KD1MESZ"
+                ],
+                "count": 3
+            },
+            {
+                "name": "stuck_out_tongue",
+                "users": [
+                    "U0REYQNB0"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U0M41RWLQ",
+        "text": "Thank you <@U04V00T89>",
+        "ts": "1468312902.001250"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "<http:\/\/www.pokewalk.com\/>",
+        "attachments": [
+            {
+                "title": "pokewalk",
+                "title_link": "http:\/\/www.pokewalk.com\/",
+                "fallback": "pokewalk",
+                "image_url": "http:\/\/static.wixstatic.com\/media\/adbdb0_fa065e7acd944c6c93daa8edbfbb79f3%7Emv2.png",
+                "from_url": "http:\/\/www.pokewalk.com\/",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 449361,
+                "service_icon": "http:\/\/static.wixstatic.com\/media\/adbdb0_ba4596be7a694bca8681c179797a47cc%7Emv2.png\/v1\/fill\/w_16%2Ch_16%2Clg_1\/adbdb0_ba4596be7a694bca8681c179797a47cc%7Emv2.png",
+                "service_name": "pokewalk.com",
+                "id": 1
+            }
+        ],
+        "ts": "1468314634.001251"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "...",
+        "ts": "1468314636.001253"
+    },
+    {
+        "type": "message",
+        "user": "U08U0TKA4",
+        "text": "walking as a service",
+        "ts": "1468314707.001254"
+    },
+    {
+        "type": "message",
+        "user": "U08U0TKA4",
+        "text": "they should add an additional service whereby they will carry your fitness tracker to log your disvoery points",
+        "ts": "1468314727.001255",
+        "reactions": [
+            {
+                "name": "joy",
+                "users": [
+                    "U0QUFPKCN"
+                ],
+                "count": 1
+            },
+            {
+                "name": "unicorn_face",
+                "users": [
+                    "U0QUFPKCN"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "thankfully, satire.",
+        "ts": "1468316008.001256"
+    },
+    {
+        "type": "message",
+        "user": "U1C0XPAQ5",
+        "text": "Why did the Pokemon Go servers go down?",
+        "ts": "1468316747.001257"
+    },
+    {
+        "type": "message",
+        "user": "U1C0XPAQ5",
+        "text": "I mean, were they realistically expecting only 500 people to play the game?",
+        "ts": "1468316768.001258"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "they weren't anticipating people bypassing regional distributioni and going global afaict",
+        "ts": "1468316984.001259"
+    },
+    {
+        "type": "message",
+        "user": "U06QL2ZEX",
+        "text": "It's legitimately available in the US though, and isn't that where a large portion of their traffic is from?",
+        "ts": "1468317303.001260"
+    },
+    {
+        "type": "message",
+        "user": "U06QL2ZEX",
+        "text": "They probably planned their infrastructure based on Ingress, and that didn't have anywhere near as much traction as pokemon got overnight",
+        "ts": "1468317345.001261"
+    },
+    {
+        "type": "message",
+        "user": "U0KD1MESZ",
+        "text": "Has anyone seen numbers of players?",
+        "ts": "1468317510.001262"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "<https:\/\/www.similarweb.com\/blog\/wp-content\/uploads\/2016\/07\/v-twitter.png>",
+        "attachments": [
+            {
+                "fallback": "1526x1199px image",
+                "image_url": "https:\/\/www.similarweb.com\/blog\/wp-content\/uploads\/2016\/07\/v-twitter.png",
+                "image_width": 1526,
+                "image_height": 1199,
+                "image_bytes": 117869,
+                "from_url": "https:\/\/www.similarweb.com\/blog\/wp-content\/uploads\/2016\/07\/v-twitter.png",
+                "id": 1
+            }
+        ],
+        "ts": "1468317893.001263"
+    },
+    {
+        "type": "message",
+        "user": "U03KJ49CH",
+        "text": "there seems to be a lot of dislike towards JIRA for managing software projects. Serious question, what aspect is most disliked about JIRA and what alternatives are used?",
+        "ts": "1468326080.001265"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "<http:\/\/keep.google.com|keep.google.com> ? :troll:",
+        "ts": "1468326118.001266"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "the poor agile method",
+        "ts": "1468326129.001267"
+    },
+    {
+        "type": "message",
+        "user": "U1NHGDJTT",
+        "text": "The problem is not JIRA its the tendancy not to apply the spine-model. can't remember who coined the spine model (help please lol).\n\nBasically discussions should not start with he tool that should be used rather with the NEED that has to be filled. Yet often its the otherway around.",
+        "ts": "1468326684.001268"
+    },
+    {
+        "type": "message",
+        "user": "U03KJ49CH",
+        "text": "<@U0WHKAXA4>: thanks never used it before looks cool, especially the reordering.",
+        "ts": "1468326777.001269"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "idk but when I work alone, it\u2019s pretty good :disappointed:",
+        "ts": "1468326806.001270"
+    },
+    {
+        "type": "message",
+        "user": "U03KJ49CH",
+        "text": "<@U1NHGDJTT>: agree, so probably JIRA's usage in enterprise is due to focus on tools...",
+        "ts": "1468326813.001271"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "Droptask is pretty good",
+        "ts": "1468326842.001272"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "but you need to pay -&gt; <https:\/\/www.droptask.com\/>",
+        "edited": {
+            "user": "U0WHKAXA4",
+            "ts": "1468326856.000000"
+        },
+        "ts": "1468326845.001273"
+    },
+    {
+        "type": "message",
+        "user": "U0RFQKSRZ",
+        "text": "We use Jira at the office ... Yeuch! But it works. \nI'm using basecamp on a freelance project and love it.",
+        "ts": "1468327235.001275"
+    },
+    {
+        "type": "message",
+        "user": "U0RFQKSRZ",
+        "text": "<https:\/\/basecamp.com\/>",
+        "attachments": [
+            {
+                "title": "Basecamp 3: Manage projects, groups, and client work.",
+                "title_link": "https:\/\/basecamp.com\/",
+                "text": "Trusted by millions, Basecamp is the leading web-based project management and collaboration tool. To-dos, files, messages, schedules, and milestones.",
+                "fallback": "Basecamp 3: Manage projects, groups, and client work.",
+                "from_url": "https:\/\/basecamp.com\/",
+                "service_icon": "https:\/\/basecamp.com\/favicon-ios.png",
+                "service_name": "basecamp.com",
+                "id": 1
+            }
+        ],
+        "ts": "1468327248.001276"
+    },
+    {
+        "type": "message",
+        "user": "U0RFQKSRZ",
+        "text": "You get one Basecamp free and you can do a lot with that.",
+        "ts": "1468327462.001278"
+    },
+    {
+        "type": "message",
+        "user": "U0WHKAXA4",
+        "text": "If you can find a droptask but open source and free :smile: I would appreciate :rocket:",
+        "edited": {
+            "user": "U0WHKAXA4",
+            "ts": "1468328136.000000"
+        },
+        "ts": "1468328125.001279"
+    },
+    {
+        "type": "message",
+        "user": "U08JH6ECS",
+        "text": "We\u2019re just Trello-ing it",
+        "ts": "1468329653.001282"
+    },
+    {
+        "type": "message",
+        "user": "U08JH6ECS",
+        "text": "Trellollolollol",
+        "ts": "1468329661.001283"
+    },
+    {
+        "type": "message",
+        "user": "U08JH6ECS",
+        "text": ":troll:",
+        "ts": "1468329676.001284"
+    },
+    {
+        "type": "message",
+        "user": "U06QL2ZEX",
+        "text": "Where would the appropriate channel be to ask about patterns and architecture?",
+        "ts": "1468330412.001285"
+    },
+    {
+        "type": "message",
+        "user": "U06QL2ZEX",
+        "text": "(I don't see a #architecture or #patterns :stuck_out_tongue: )",
+        "ts": "1468330430.001286"
+    },
+    {
+        "type": "message",
+        "user": "U1NHGDJTT",
+        "text": "Here is the link of the Spine Model:\n<http:\/\/spinemodel.info\/>\n\nI wish all technical discussions held this as the guiding principle or basis",
+        "ts": "1468331978.001287",
+        "reactions": [
+            {
+                "name": "heart",
+                "users": [
+                    "U04B2EFED"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "youtrack++",
+        "ts": "1468333336.001288",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U06QL2ZEX"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "as capable, less BS.",
+        "ts": "1468333341.001289"
+    },
+    {
+        "type": "message",
+        "user": "U02KF1UKJ",
+        "text": "<@U0CGL9W8P>: is youtrack comparable to jira? i haven\u2019t been following it since it was first announced",
+        "ts": "1468334183.001290"
+    },
+    {
+        "type": "message",
+        "user": "U02KF1UKJ",
+        "text": "we use trello for managing pretty much everything",
+        "ts": "1468334198.001291"
+    },
+    {
+        "type": "message",
+        "user": "U1K651NRJ",
+        "text": "In my experience problems arise where people paint themselves into a corner when they configure JIRA workflows or permissions or something they don't understand well enough.",
+        "ts": "1468334742.001292"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "ito feature set yes.",
+        "ts": "1468334875.001293"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "jira is not friendly to developers and managers. The people it should be.",
+        "ts": "1468334902.001294"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "youtracks boards (ala kanban\/cards) are amazing for visually communicating, and you have all the happy of a real issue tracker + integrations",
+        "ts": "1468334948.001295"
+    },
+    {
+        "type": "message",
+        "user": "U0CE8P0G3",
+        "text": "Scrum Masters love Jira because they can fiddle",
+        "ts": "1468335281.001296"
+    },
+    {
+        "type": "message",
+        "user": "U0CE8P0G3",
+        "text": "they can add tons of more priority levels",
+        "ts": "1468335289.001297"
+    },
+    {
+        "type": "message",
+        "user": "U0CE8P0G3",
+        "text": "(each meaning \u201ccritical\u201d)",
+        "ts": "1468335301.001298"
+    },
+    {
+        "type": "message",
+        "user": "U0CE8P0G3",
+        "text": "create complex and inscrutible workflows",
+        "ts": "1468335314.001299"
+    },
+    {
+        "type": "message",
+        "user": "U0CE8P0G3",
+        "text": "and watch their lovely burn rate charts",
+        "ts": "1468335326.001300"
+    },
+    {
+        "type": "message",
+        "user": "U02KF1UKJ",
+        "text": "I like just having a freeform kanban tool with Trello - we can see exactly where our work is at any time and see where things are starting to choke up. So far I haven\u2019t felt the need for complex estimation\/time tracking tools. We abandoned PivotalTracker ages ago.",
+        "ts": "1468336529.001301"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "watch a video on the youtrack boards.",
+        "ts": "1468336946.001302"
+    },
+    {
+        "type": "message",
+        "user": "U0M41RWLQ",
+        "text": "Thank you @duane",
+        "ts": "1468337289.001303"
+    },
+    {
+        "type": "message",
+        "user": "U0KD2MNFL",
+        "text": "Yet another workflow I guess",
+        "ts": "1468337732.001304"
+    },
+    {
+        "type": "message",
+        "user": "U0KD2MNFL",
+        "text": "Have you guys found success with Trello?",
+        "ts": "1468337740.001305"
+    },
+    {
+        "type": "message",
+        "user": "U0KD2MNFL",
+        "text": "<@U02KF1UKJ>: Yeah we are enjoying that as well but dev team is very small so maybe overkill",
+        "ts": "1468337754.001306"
+    },
+    {
+        "type": "message",
+        "user": "U02KF1UKJ",
+        "text": "<@U0CGL9W8P> this agile board demo is pretty compelling",
+        "ts": "1468338438.001307"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "yep. and you can have multiple boards over the same issues \/ data, just different swimlane\/group fields.",
+        "ts": "1468338771.001308"
+    },
+    {
+        "type": "message",
+        "user": "U0CGL9W8P",
+        "text": "so different views for management vs dev teams for e.g.",
+        "ts": "1468338780.001309"
+    },
+    {
+        "type": "message",
+        "user": "U0348JC5Y",
+        "text": "I have used this and was super impressed - <https:\/\/www.teamwork.com\/>",
+        "attachments": [
+            {
+                "service_name": "Teamwork.com",
+                "title": "Teamwork.com - Cloud Productivity Software",
+                "title_link": "https:\/\/www.teamwork.com\/",
+                "text": "A suite of online collaboration tools designed to maximize your team\u2019s productivity, communication and overall customer happiness.",
+                "fallback": "Teamwork.com: Teamwork.com - Cloud Productivity Software",
+                "from_url": "https:\/\/www.teamwork.com\/",
+                "id": 1
+            }
+        ],
+        "ts": "1468339901.001310"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "<@U0CE8P0G3>: not sure how sarcastic you were being, your comment would be taken as offensive by a lot of good scrum masters and agile coaches i know ",
+        "ts": "1468368234.001312"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "<@U03KJ49CH>: jira is a very heavy handed approach and tool, lots of config. Very complex. What often happens is the focus shifts from being effective and delivering value to becoming a slave to the tool ",
+        "ts": "1468368336.001313"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "Biggest  issue I've seen, and it's not exclusive to jira, rather exacerbated by it, is people use it as a communication tool instead of a planning \/coordinating \/auditing tool. Oh, look at all these fields, I must fill them in. Because I've filled them in, I've communicated with my team. It's a particularly bad tool for communication (low bandwidth high latency) ",
+        "ts": "1468368451.001314",
+        "reactions": [
+            {
+                "name": "heavy_plus_sign",
+                "users": [
+                    "U050TUFG5"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "The whole original intent behind user stories is to have high bandwidth low latency conversations that end in shared understanding. Product people who spend a lot of time writing lots of text in jira and other tools, then handing those over is a bad anti pattern. Not too different to large brs docs in days of old. ",
+        "ts": "1468368567.001315"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "That kind of scenario is a barrier to effective communication and shared understanding because 'just look at the story in jira, everything you need to know is there'. Screw collaboration, screw shared understanding, just take my order and do it ",
+        "ts": "1468368639.001316"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "My ideal: physical board, low batch size \/wip, frequent in person discussions around a whiteboard ",
+        "ts": "1468368705.001317"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "If you need an audit trail, eg for tax benefit claims for R&amp;D, document the work done post - fact, ie after its been delivered. Then it matters less what tool you use ",
+        "ts": "1468368796.001318"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "<@U1NHGDJTT>: <@U04AAKBBX> and <@U04B2EFED> are the originators of the Spine Model ",
+        "ts": "1468368865.001319"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "Apologies to all for this hijack and thanks for letting me write what probably should be a blog post here :simple_smile: ",
+        "ts": "1468368916.001320"
+    },
+    {
+        "type": "message",
+        "user": "U0348JC5Y",
+        "text": "<@U04GQ2MEH>: thanks for the thoughtful insights. Low bandwidth high latency is the thought for the day ",
+        "ts": "1468390907.001321"
+    },
+    {
+        "type": "message",
+        "user": "U02KGTKC8",
+        "text": "I had a similar challenge in $previous_job\u2026 I was a huge proponent of pivotal tracker because it did very very little, and its biggest strength was automating cadence, which is something a computer can do better than us after all. they went with jira for a lot of the reasons Josh mentioned above. completely missed the point.",
+        "ts": "1468392169.001322"
+    },
+    {
+        "type": "message",
+        "user": "U04GQ2MEH",
+        "text": "<@U0348JC5Y> my pleasure. hope you enjoyed reading it",
+        "edited": {
+            "user": "U04GQ2MEH",
+            "ts": "1468392794.000000"
+        },
+        "ts": "1468392728.001323"
+    }
+]

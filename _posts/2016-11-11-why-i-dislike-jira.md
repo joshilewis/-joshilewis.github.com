@@ -1,7 +1,9 @@
 =Why I dislike Jira (and other similar tools)=
 
 **TL;DR:** Jira (and similar tools) is great for keeping track of bugs, and for tracking, coordinating and auditing work. It is a terrible way to communicate and collaborate across a team. Don't use it as a communication tool. Rather speak in-person and then document your shared understanding in a tool like Jira, if such documentation is required.
---------
+
+-------------
+
 There are some common anti-patterns I've seen in organisations that use Jira (and other similar tools). This is what I've experienced in several environments: A team goes into Backlog Refinement and/or Sprint Planning and the Product Owner (or whomever is responsible for documenting requirements) projects Jira onto the screen in the boardroom. One by one, each work-item is opened individually and the PO reads through what he or she has written. There's a little bit of discussion, the delivery team decides they're ready to play planning poker, they do so and provide an estimate for the work-item, which is captured, and then they move on to the next work-item.
 
 Instead of having a conversation about what problem we're trying to solve and what outcome we want to achieve, what often happens is everyone just reads what's been written down. Yes, there is some discussion and a few questions, but fundamentally the conversation is framed (and limited) by what the PO had written down previously (however long ago that was). "We don't need a conversation because all you need to know is in Jira, just read it."
@@ -16,4 +18,4 @@ What would happen if instead of the PO creating all the requirements documentati
 
 Another big problem with Jira and similar tools is *tool enslavement*. Instead of making the tool work for us, we begin to work for the tool. I've seen much time and effort wasted through configuring and troubleshooting things like Jira workflows. I've seen things like Team A's Sprint being closed because Team B's Sprint was correctly closed, and the Sprints happened to have the same name (based on the date). Guess how much fun that was to resolve. 
 
-In conclusion, Jira was originally created as a bug (work) **tracking** tool, and its best use is as a tool to plan, coordinate and audit work, **not** as a communication medium. If you need to document shard understanding, or what work was done when by whom, experiment with capturing this information post-fact, instead of up-front.
+In conclusion, Jira was originally created as a bug/work tracking tool, and its best use is as a tool to plan, coordinate and audit work, **not** as a communication medium. If you need to document shard understanding, or what work was done when by whom, experiment with capturing this information post-fact, instead of up-front.

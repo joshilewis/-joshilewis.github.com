@@ -1,4 +1,4 @@
-=Why I dislike Jira (and other similar tools)=
+=Issues I've seen with Jira (and other similar tools)=
 
 **TL;DR:** Jira (and similar tools) is great for keeping track of bugs, and for tracking, coordinating and auditing work. It is a terrible way to communicate and collaborate across a team. Don't use it as a communication tool. Rather speak in-person and then document your shared understanding in a tool like Jira, if such documentation is required.
 

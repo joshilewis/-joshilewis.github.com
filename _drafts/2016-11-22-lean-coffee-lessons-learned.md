@@ -89,4 +89,12 @@ Try book a meeting/board room that is very visible and has a lot of foot traffic
 
 One thing you should be aware of is that the presence of managers (or people to whom other people report) **will** have an effect on how safe people feel and therefore what they'll be prepared to talk about. I've also seen the presence of senior managers change the conversation into questions that should be part of ordinary operations (this is fine if its the aim of you Lean Coffee but it wasn't the aim of this one).
 
-==Resources==
+==Resources==  
+ * [Lean Coffee](http://leancoffee.org/)
+ * [A nice slideshow I found explaining Lean Coffee](http://www.slideshare.net/SteveRogalsky/a-guide-to-lean-coffee)  
+ * [Gerry Kirk's One Page Intro](http://www.slideshare.net/gerrykirk/lean-coffee-how-to) which I've used a lot in the past. I usually have one or two laminated print-outs of this sitting on tables when I facilitate.  
+ * [Another great article on Lean Coffee](http://agilecoffee.com/leancoffee/)  
+ * [Jo'burg Lean Coffee Meetup Group](https://www.meetup.com/Lean-Coffee-JHB/): My 'home' Lean Coffee, and where I first learned about it.  
+ * [Modus Cooperandi's Lean Coffee material](http://moduscooperandi.com/kanban-applied/lean-coffee-2/) Modus Cooperandi is Jim Benson's company. Jim Benson created Lean Coffee.  
+
+Please offer your Lean Coffee thoughts, tricks, tips, hacks and resources in the comments!

@@ -62,10 +62,13 @@ There are a few things to remember which improve the usage and utility of sticky
 * Try write with a colour that can be seen on the sticky colour.
 
 **Group Size**
+Group size is probably the factor that affects the hosting and facilitating of Lean Coffee the most.  
+ * Fewer than 4 people: When there are so few people, I usually discard the Lean Coffee structure and have a regular conversation. At this size venue doesn't really matter.  
+ * Up to about 8 people:  The public Lean Coffees I attend are usually around this size. Everyone can fit around a single table or a few small tables pushed together. Sound doesn't need to travel as far. For these reasons venue is not too important at this size. The flow board can be created on the table(s) around which everyone sits. 
+ * Up to 20-25 people: This size is quite typical for conference and internal Lean Coffee. At this size it becomes difficult to fit everyone at a single table, and for everyone to see the flow board if it is on a table. Therefore you'll probably need either a large room like a boardroom with a large table, or a room with several tables. At this size you want a room with doors that can close, especially if the venue is adjacent to a noisy area, like the registration or refreshments area at a conference. This is because everyone's voice should be within hearing everywhere in the room.  
+ At this size, its not feasible to have the flow board on a table, so I usually use a convenient wall or whiteboard for the flow board. At conferences I usually use a flipchart for the flow board, and a second flipchart to hold the topic stickies before, during and after voting.  
 
-**Venue**
-
-**First-timers**
+ * More than 20-25 people:  I don't have much experience with this group size. A pattern I've heard about a few times is splitting the large group into two or more smaller groups, which have their own discussions then 'reconvene' afterwards and brief each other on their discussions and learnings.
 
 **Internal Lean Coffee**  
 For internal (private company-specific) Lean Coffee, its a good idea to announce at the beginning that everything said in the event is private and confidential and shouldn't leave the room. This is to make a safe space so that people can open up more.

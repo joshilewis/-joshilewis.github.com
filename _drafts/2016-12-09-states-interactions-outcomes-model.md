@@ -4,7 +4,9 @@
 
 --------
 
-Specification by Example is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book]. One of the promises of using Specification by Example
+Specification by Example is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book]. One of the reasons I use Specification by Example is that it allows us to work with something tangible, instead of just 'invisible ideas'. This is useful for a number of reasons, including:  
+* feedback
+* edge cases - making the factors which affect 
 
 The outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction.
 

@@ -45,7 +45,8 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 **Outcome dimensions**: For Simple Pricing, the outcome consists only of the total calculated as a result of capturing an item - *new total*.  
 **Possible values for state types**: *Current total* is an integer, which can be negative, 0, or positive.   
 **Possible values for inputs**: *Item price* is an integer, which can be negative, 0, or positive.  
-**Expected outcomes for combinations of state and inputs**:
+**Expected outcomes for combinations of state and inputs**:  
+
 |State|Interaction|Outcome|Scenario Name|
 |:---|:---|:---|:---|
 |Current total|Item price|New total||

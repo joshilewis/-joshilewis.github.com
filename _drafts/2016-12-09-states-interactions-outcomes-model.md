@@ -18,11 +18,12 @@ The model states that expected system behaviour can be completely and comprehens
 
 Part of the model is a set of steps cross-functional teams can follow to collaboratively create such an enumeration of states, interactions and outcomes. These steps are:    
 1. Explicitly define and bound the system under specification. What is included, what is excluded?
-2. What are the different types of inputs to the system?
-3. What are the types of state that the system can have? Another way to ask this: Besides the inputs, what can affect the system outcome to an interaction?
-4. For each type of state, what are the possible values?
-5. For each type of input, what are the possible values?
-6. For each combination of state and interaction, what is the expected outcome?
+2. What are the different inputs to the system?
+3. What are the types of state that the system can have? Another way to ask this: Besides the inputs, what can affect the outcome of an interaction?
+4. What constitutes system outcome? Is any output returned to the user? Note that an outcome must, by definition, include all states as identified above. Outcome can also include error conditions.
+5. For each type of state, what are the possible values?
+6. For each type of input, what are the possible values?
+7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
 
 To demonstrate the model and the process, I will take you through applying it to a problem I use frequently in coaching and training. Imagine we are creating software to calculate the total cost of a bunch of items at a point of sales. (This problem is inspired by [Dave Thomas' Supermarket Pricing Kata]().) Imagine you walk up to a till at a supermarket, hand the check-out person your items one-by-one, and the checkout person starts calculating the total of the items you want to purchase. Note that the total is updated each time the checkout person records an item for purchase.
 
@@ -37,6 +38,24 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 **Simple Pricing**  
 **System boundaries**: We are concerned only with the way the total for the purchased items is calculated. We are not concerned with things like how the cost of an item is acquired (e.g. barcode scanning), accepting payment etc.
 
-**Types of inputs**: For Simple Pricing, the only input is the price of the item being recorded. 
+**Types of inputs**: For Simple Pricing, the only input is the price of the item being recorded - *item price*. 
 
-**Types of state**: Besides inputs, what determines 
+**Types of state**: Besides inputs, what affects calculating the total price? For Simple Pricing, the total after recording an item - the new total - is determined by both the price of the captured item, as well as the total before the item is captured. Therefore state consists of *current total*.
+
+**Outcome dimensions**: For Simple Pricing, the outcome consists only of the total calculated as a result of capturing an item - *new total*.
+
+**Possible values for state types**: *Current total* is an integer, which can be negative, 0, or positive. 
+
+**Possible values for inputs**: *Item price* is an integer, which can be negative, 0, or positive.
+
+**Expected outcomes for combinations of state and inputs**:
+|State|Interaction|Outcome|Scenario Name|
+|:---|:---|:---|:---|
+|Current total|Item price|New total||
+|0|0|0|
+|0|10|10|First item|
+|10|10|10|Second item|
+|0|-10|ERROR - item price can't be negative|First item with negative price|
+|10|-10|ERROR - item price can't be negative|Second item with negative price|
+|10|ABCDEF|ERROR - invalid input|Text input|
+|~~-10~~|~~10~~||*Invalid state*|

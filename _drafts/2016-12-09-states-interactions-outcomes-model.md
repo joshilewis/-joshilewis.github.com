@@ -57,7 +57,9 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 |10|-10||ERROR - item price can't be negative|Second item with negative price|
 |10|ABCDEF||ERROR - invalid input|Text input|
 
-
+  
+    
+      
 
 |State|||Interaction||Outcome|||Scenario Name|
 |:---|:---|:--|:---|:---|:---|:---|:---|:---|
@@ -65,9 +67,5 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 |-|20|2 Cokes|Coke|10|30|3 Cokes||Third item with no promotion|
 |Buy 3 Cokes pay for 2|20|2 Cokes|Coke|10|20|3 Cokes||Third qualifying item with 3 for 3 promotion|
 |Buy 3 Cokes pay for 2|20|1 Coke, 1 bread|Coke|10|30|2 Cokes, 1 bread|||
-
-
-|0||10|10||First item|
-|10||10|20||Second item|
 
 

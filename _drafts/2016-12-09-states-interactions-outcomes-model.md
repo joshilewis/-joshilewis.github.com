@@ -47,14 +47,27 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 **Possible values for inputs**: *Item price* is an integer, which can be negative, 0, or positive.  
 **Expected outcomes for combinations of state and inputs**:  
 
-|State|Interaction|Outcome|Scenario Name|
-|:---|:---|:---|:---|
-|Current total|Item price|New total||
-|0|0|0|
-|0|10|10|First item|
-|10|10|10|Second item|
-|0|-10|ERROR - item price can't be negative|First item with negative price|
-|10|-10|ERROR - item price can't be negative|Second item with negative price|
-|10|ABCDEF|ERROR - invalid input|Text input|
+|State|Interaction|Outcome||Scenario Name|
+|:---|:---|:---|:---|:---|
+|Current total|Capture item that costs|New total|Error|
+|0|0|0||Free first item|
+|0|10|10||First item|
+|10|10|20||Second item|
+|0|-10||ERROR - item price can't be negative|First item with negative price|
+|10|-10||ERROR - item price can't be negative|Second item with negative price|
+|10|ABCDEF||ERROR - invalid input|Text input|
+
+
+
+|State|||Interaction||Outcome|||Scenario Name|
+|:---|:---|:--|:---|:---|:---|:---|:---|:---|
+|Active promotion |Current total|Items already captured|Capture item|That costs|New total|New items|Error|
+|-|20|2 Cokes|Coke|10|30|3 Cokes||Third item with no promotion|
+|Buy 3 Cokes pay for 2|20|2 Cokes|Coke|10|20|3 Cokes||Third qualifying item with 3 for 3 promotion|
+|Buy 3 Cokes pay for 2|20|1 Coke, 1 bread|Coke|10|30|2 Cokes, 1 bread|||
+
+
+|0||10|10||First item|
+|10||10|20||Second item|
 
 

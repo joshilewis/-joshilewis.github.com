@@ -4,6 +4,7 @@
 
 --------
 
+**Specification by Example and Behaviour-Driven Development** 
 Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
 
 * Getting feedback on the work from a wider audience earlier in the process.
@@ -11,9 +12,10 @@ Specification by Example (SBE) is the practice of specifying expected system beh
 
 Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
 
-A common challenge teams face when they start using BDD and SBE is the need to make every aspect of externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
+A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
 
-The simplest way we can understand the behaviour of a system is like this:
+**Understanding systems**  
+The simplest way we can understand the behaviour of a system is stating that the input to a system determines the output.
 
 ![Input -> System -> Output](input-system-output.png)
 
@@ -25,12 +27,14 @@ However, it is important to understand that the outcome of an interaction with a
 
 ![State + Interaction -> System -> Outcome](state-interaction-system-outcome.png)
 
+The introduction of state into the picture often causes some challenges. The first challenge is differentiating between *interaction* and *state*. The easiest way to distinguish between them is by asking the question *Besides inputs supplied to the system as part of an interaction, what else determines the outcome of an interaction?*.
 
-understanding the difference between interactions and states, and how to differentiate between them. It is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. Furthermore, it is often not obvious or well understood that systems generally have multiple types or dimensions of state. That is, the state of a system is described by specifying concrete values of more than one type. 
+The next challenge is understanding that system state is generally not described by a single value. System state is typically made up of multiple dimensions or types, and therefore must be expressed as a set of concrete values, one value per dimension. The same applies to values supplied to the system as part of an interaction.
 
-The model states that expected system behaviour can be completely and comprehensively specified by describing the expected outcome for every possible combination of state and interaction. If we can enumerate all the possible combinations of state and interaction, and express the expected outcome for each of these combinations, we have created a complete and comprehensive specification of the functionality of that system. 
+**The model**  
+The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
 
-Part of the model is a set of steps cross-functional teams can follow to collaboratively create such an enumeration of states, interactions and outcomes. These steps are:    
+I have developed a set of steps cross-functional teams can use to collaboratively explore the desired system behaviour, and to create an enumeration of all possible combinations of states and interactions, and expected outcomes. These steps are:    
 
 1. Explicitly define and bound the system under specification. What is included, what is excluded?
 2. What are the different inputs to the system?

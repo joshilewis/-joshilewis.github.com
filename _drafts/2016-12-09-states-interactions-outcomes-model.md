@@ -4,16 +4,29 @@
 
 --------
 
-Specification by Example is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). One of the reasons I use Specification by Example is that it allows us to work with something tangible, instead of just 'invisible ideas'. Some of the benefits of Specification by Example are:  
+Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
 
 * Getting feedback on the work from a wider audience earlier in the process.
 * Making edge cases more obvious. 
 
-Ordinarily, we would need to write some software to achieve these things. By using Specification by Example we can get these benefits **before** writing any software. However it is not always easy to get started with Specification by Example.
+Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
 
-A common challenge teams face when they start using Specification by Example is understanding the difference between interactions and states, and how to differentiate between them. It is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. Furthermore, it is often not obvious or well understood that systems generally have multiple types or dimensions of state. That is, the state of a system is described by specifying concrete values of more than one type. 
+A common challenge teams face when they start using BDD and SBE is the need to make every aspect of externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
 
-A note: I have come to use the terms 'Interaction' and 'Outcome' instead of 'input' and 'output' respectively, because they are closer to the way most people think about working with software products: "I interact with a system to achieve some outcome". Although the term 'output' generally includes system post-conditions or state, 'output' can be confusing if the result of an interaction is only a change in system state, and there is no explicit or obvious 'value' returned.
+The simplest way we can understand the behaviour of a system is like this:
+
+![Input -> System -> Output](input-system-output.png)
+
+In this view, the system output is determined only by the input to the system. I have come to use the terms 'Interaction' and 'Outcome' instead of 'input' and 'output' respectively, because they are closer to the way most people think about working with software products: "I interact with a system to achieve some outcome". 
+
+![Interaction -> System -> Outcome](interaction-system-outcome.png)
+
+However, it is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. 
+
+![State + Interaction -> System -> Outcome](state-interaction-system-outcome.png)
+
+
+understanding the difference between interactions and states, and how to differentiate between them. It is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. Furthermore, it is often not obvious or well understood that systems generally have multiple types or dimensions of state. That is, the state of a system is described by specifying concrete values of more than one type. 
 
 The model states that expected system behaviour can be completely and comprehensively specified by describing the expected outcome for every possible combination of state and interaction. If we can enumerate all the possible combinations of state and interaction, and express the expected outcome for each of these combinations, we have created a complete and comprehensive specification of the functionality of that system. 
 
@@ -58,12 +71,10 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 |10|ABCDEF||ERROR - invalid input|Text input|
 
   
-    
-      
 
 |State|||Interaction||Outcome|||Scenario Name|
 |:---|:---|:--|:---|:---|:---|:---|:---|:---|
-|Active promotion |Current total|Items already captured|Capture item|That costs|New total|New items|Error|
+|Active promotion |Current total|Items already captured|Capture|That costs|New total|New items|Error|
 |-|20|2 Cokes|Coke|10|30|3 Cokes||Third item with no promotion|
 |Buy 3 Cokes pay for 2|20|2 Cokes|Coke|10|20|3 Cokes||Third qualifying item with 3 for 3 promotion|
 |Buy 3 Cokes pay for 2|20|1 Coke, 1 bread|Coke|10|30|2 Cokes, 1 bread|||

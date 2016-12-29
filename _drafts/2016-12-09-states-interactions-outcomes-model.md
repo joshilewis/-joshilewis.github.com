@@ -15,7 +15,7 @@ Ordinarily, we would need to write some software to achieve these things. By usi
 A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
 
 **Understanding systems**  
-The simplest way we can understand the behaviour of a system is stating that the input to a system determines the output.
+The simplest way we can understand the behaviour of a system is as a simple transaction: some entity is stimulated or exercised in a particular way, and the entity does some work. The simplest way of modeling a transaction is by stating that the input to a system determines the output.
 
 ![Input -> System -> Output](input-system-output.png)
 
@@ -94,3 +94,12 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 |Buy 3 Cokes pay for 2|20|1 Coke, 1 bread|Coke|10|30|2 Cokes, 1 bread||3rd item doesn't trigger promotion|
 
 
+to note:
+- domain level language
+- no implementation, definitely no software
+- describes the outcomes, not how work is done
+- things that determine the outcome are super-obvious and explicit, making it more tangible, and easier to see edge cases
+- can see invalid states and interactions easily
+- current system state is a function of all previous interactions
+- can see how to get to any particular state
+- easy to automate (should we want to)

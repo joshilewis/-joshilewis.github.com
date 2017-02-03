@@ -1,51 +1,11 @@
 =The States, Interactions and Outcomes Model=
 
-**TL;DR:**  In my experience, teams don't have a structured way to explore, discuss and document the factors that affect system behaviour. The States, Interactions and Outcomes model provides such a structure.  Using the model makes Specification by Example and BDD easier and more effective. The model focuses on making system boundaries, states, interactions and outcomes explicit.
+**TL;DR:**  The States, Interactions and Outcomes model provides a way for cross-functional teams to collaboratively explore, specify and document expected system behaviour. This article contains a worked example illustrating the model, and the thinking that led to the creation of the model.
 
 --------
 
-**Specification by Example and Behaviour-Driven Development** 
-Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
-
-* Getting feedback on the work from a wider audience earlier in the process.
-* Making edge cases more obvious. 
-
-Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
-
-A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
-
-**Understanding systems**  
-The simplest way we can understand the behaviour of a system is as a simple transaction: some entity is stimulated or exercised in a particular way, and the entity does some work. The simplest way of modeling a transaction is by stating that the input to a system determines the output.
-
-![Input -> System -> Output](input-system-output.png)
-
-In this view, the system output is determined only by the input to the system. I have come to use the terms 'Interaction' and 'Outcome' instead of 'input' and 'output' respectively, because they are closer to the way most people think about working with software products: "I interact with a system to achieve some outcome". 
-
-![Interaction -> System -> Outcome](interaction-system-outcome.png)
-
-However, it is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. 
-
-![State + Interaction -> System -> Outcome](state-interaction-system-outcome.png)
-
-The introduction of state into the picture often causes some challenges. The first challenge is differentiating between *interaction* and *state*. The easiest way to distinguish between them is by asking the question *Besides inputs supplied to the system as part of an interaction, what else determines the outcome of an interaction?*.
-
-The next challenge is understanding that system state is generally not described by a single value. System state is typically made up of multiple dimensions or types, and therefore must be expressed as a set of concrete values, one value per dimension. The same applies to values supplied to the system as part of an interaction.
-
-**The model**  
-The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
-
-I have developed a set of steps cross-functional teams can use to collaboratively explore the desired system behaviour, and to create an enumeration of all possible combinations of states and interactions, and expected outcomes. These steps are:    
-
-1. Explicitly define and bound the system under specification. What is included, what is excluded?
-2. What are the different inputs to the system?
-3. What are the types of state that the system can have? Another way to ask this: Besides the inputs, what can affect the outcome of an interaction?
-4. What constitutes system outcome? Is any output returned to the user? Note that an outcome must, by definition, include all states as identified above. Outcome can also include error conditions.
-5. For each type of state, what are the possible values?
-6. For each type of input, what are the possible values?
-7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
-
 **Worked example**
-To demonstrate the model and the process, I will take you through applying it to a problem I use frequently in coaching and training. Imagine we are creating software to calculate the total cost of purchased items at a point of sale. (This problem is inspired by [Dave Thomas' Supermarket Pricing Kata]().) Imagine you walk up to a till at a supermarket, hand the check-out person your items one-by-one, and the checkout person starts calculating the total of the items you want to purchase. The total is updated each time the checkout person records an item for purchase.
+To demonstrate the model and the process, I will take you through applying it to a problem I use frequently in coaching and training. Imagine we are creating software to calculate the total cost of purchased items at a point of sale. (This problem is inspired by [Dave Thomas' Supermarket Pricing Kata]().) You walk up to a till at a supermarket, hand the check-out person your items one-by-one, and the checkout person starts calculating the total of the items you want to purchase. The total is updated each time the checkout person records an item for purchase.
 
 We would like to include a number of different ways of calculating the total price for purchased items, since the supermarket will want to run promotions from time to time. Some of the pricing methods we would like to include are:
 
@@ -93,13 +53,50 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 |Buy 3 Cokes pay for 2|20|2 Cokes|Coke|10|20|3 Cokes||3rd qualifying item with 3 for 2 promotion|
 |Buy 3 Cokes pay for 2|20|1 Coke, 1 bread|Coke|10|30|2 Cokes, 1 bread||3rd item doesn't trigger promotion|
 
+There are several interesting things about the specifications above to which I'd like to draw particular attention:  
+ * All the words and concepts used are domain-level words and concepts. There are no implementation or software-specific words.
+ * The specification describes the transactions and outcomes only, not how the work should be done.
+ * The things that determine the outcome of a transaction are super-obvious and explicit. This makes it easier to detect and discuss edge cases.
+ * Invalid states and interactions are easy to see.
+ * The path to any particular state is clear and obvious
+ * Should we want to, it would be easy to automate the verification of a system which should satisfy these specifications.
 
-to note:
-- domain level language
-- no implementation, definitely no software
-- describes the outcomes, not how work is done
-- things that determine the outcome are super-obvious and explicit, making it more tangible, and easier to see edge cases
-- can see invalid states and interactions easily
-- current system state is a function of all previous interactions
-- can see how to get to any particular state
-- easy to automate (should we want to)
+**The Thinking Behind The Model** 
+The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
+
+The worked example above follows these steps:  
+1. Explicitly define and bound the system under specification. What is included, what is excluded?
+2. What are the different inputs to the system?
+3. What are the types of state that the system can have? Another way to ask this: Besides the inputs, what can affect the outcome of an interaction?
+4. What constitutes system outcome? Is any output returned to the user? Note that an outcome must, by definition, include all states as identified above. Outcome can also include error conditions.
+5. For each type of state, what are the possible values?
+6. For each type of input, what are the possible values?
+7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
+
+**Understanding systems**  
+The steps above are designed to help a team understand the system they're dealing with. The simplest way we can understand the behaviour of a system is as a simple transaction: some entity is stimulated or exercised in a particular way, and the entity does some work. The simplest way of modeling a transaction is by stating that the input to a system determines the output.
+
+![Input -> System -> Output](input-system-output.png)
+
+In this view, the system output is determined only by the input to the system. I have come to use the terms 'Interaction' and 'Outcome' instead of 'input' and 'output' respectively, because they are closer to the way most people think about working with software products: "I interact with a system to achieve some outcome". 
+
+![Interaction -> System -> Outcome](interaction-system-outcome.png)
+
+However, it is important to understand that the outcome of an interaction with a system is determined **not only** by the interaction, but also by the state of the system at the time of the interaction. 
+
+![State + Interaction -> System -> Outcome](state-interaction-system-outcome.png)
+
+The introduction of state into the picture often causes some challenges. The first challenge is differentiating between *interaction* and *state*. The easiest way to distinguish between them is by asking the question *What determines the outcome of an interaction besides the input?*.
+
+The next challenge is understanding that system state is generally not described by a single value. System state is typically made up of multiple dimensions or types, and therefore must be expressed as a set of concrete values, one value per dimension. The same applies to values supplied to the system as part of an interaction.
+
+**Specification by Example and Behaviour-Driven Development** 
+The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
+
+* Getting feedback on the work from a wider audience earlier in the process.
+* Making edge cases more obvious. 
+
+Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
+
+A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
+

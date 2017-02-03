@@ -73,6 +73,16 @@ The worked example above follows these steps:
 6. For each type of input, what are the possible values?
 7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
 
+**Specification by Example and Behaviour-Driven Development** 
+The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
+
+* Getting feedback on the work from a wider audience earlier in the process.
+* Making edge cases more obvious. 
+
+Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
+
+A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
+
 **Understanding systems**  
 The steps above are designed to help a team understand the system they're dealing with. The simplest way we can understand the behaviour of a system is as a simple transaction: some entity is stimulated or exercised in a particular way, and the entity does some work. The simplest way of modeling a transaction is by stating that the input to a system determines the output.
 
@@ -89,14 +99,4 @@ However, it is important to understand that the outcome of an interaction with a
 The introduction of state into the picture often causes some challenges. The first challenge is differentiating between *interaction* and *state*. The easiest way to distinguish between them is by asking the question *What determines the outcome of an interaction besides the input?*.
 
 The next challenge is understanding that system state is generally not described by a single value. System state is typically made up of multiple dimensions or types, and therefore must be expressed as a set of concrete values, one value per dimension. The same applies to values supplied to the system as part of an interaction.
-
-**Specification by Example and Behaviour-Driven Development** 
-The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
-
-* Getting feedback on the work from a wider audience earlier in the process.
-* Making edge cases more obvious. 
-
-Ordinarily, we would need to write some software to achieve these things. By using BDD and SBE we can get these benefits **before** writing any software. However it is not always easy to get started with these techniques.
-
-A common challenge teams face when they start using BDD and SBE is the need to make every aspect of expected externally-observable system behaviour completely explicit. That is, all the factors which affect the behaviour of the system must be identified and made explicit. If any of these factors are missing or unknown, we cannot specify expected system behaviour completely and comprehensively - we will have gaps. It is difficult to develop a successful software product if there are gaps or inconsistencies in what we expect the software to do.
 

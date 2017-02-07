@@ -10,7 +10,7 @@ To demonstrate the model and the process, I will take you through applying it to
 We would like to include a number of different ways of calculating the total price for purchased items, since the supermarket will want to run promotions from time to time. Some of the pricing methods we would like to include are:
 
 * Simple Pricing: the total cost is calculated simply by adding up the cost of each individual item recorded at the point of sale.
-* Three-for-Two Promotion: By two of any particular item, pay for only two. This promotion is specific to the type of item being sold. For example, buy three loaves of Brand-X bread,  pay for only two.
+* Three-for-Two Promotion: By three of any particular item, pay for only two. This promotion is specific to the type of item being sold. For example, buy three loaves of Brand-X bread,  pay for only two.
 * Combo Deal: A discount is applied when a specific combination of items is purchased.
 * Bulk Discount: A discount is applied when more than a specific number of a particular item is purchased.  
 

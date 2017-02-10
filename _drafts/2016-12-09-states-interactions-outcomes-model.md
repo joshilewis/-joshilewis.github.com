@@ -104,3 +104,4 @@ The introduction of state into the picture often causes some challenges. The fir
 
 The next challenge is understanding that system state is generally not described by a single value. System state is typically made up of multiple dimensions or types, and therefore must be expressed as a set of concrete values, one value per dimension. The same applies to values supplied to the system as part of an interaction.
 
+Once a team begins thinking in terms of *states, interactions and outcomes*, they're generally able to have more effective conversations around what behaviour they expect from their system.

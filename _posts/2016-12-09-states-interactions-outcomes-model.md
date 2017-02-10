@@ -65,10 +65,7 @@ There are several interesting things about the specifications above to which I'd
 
  As mentioned above, I developed and use this model during my coaching and training. It has proven very effective for quickly exploring and documenting system behaviour. In some BDD Bootcamps, we have explored and specified legacy systems running in productions in about 3 hours. One of the ways this has proven useful is people in the bootcamp who have not worked on those particular systems gained a very thorough high-level overview of the *intention* of the system.
 
-**The Thinking Behind The Model** 
-The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
-
-The worked example above follows these steps:  
+ The worked example above follows these steps:  
 1. Explicitly define and bound the system under specification. What is included, what is excluded?
 2. What are the different inputs to the system?
 3. What are the types of state that the system can have? Another way to ask this: Besides the inputs, what can affect the outcome of an interaction?
@@ -76,6 +73,10 @@ The worked example above follows these steps:
 5. For each type of state, what are the possible values?
 6. For each type of input, what are the possible values?
 7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
+
+**The Thinking Behind The Model** 
+The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
+
 
 **Specification by Example and Behaviour-Driven Development** 
 The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](https://gojko.net/books/specification-by-example/). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  

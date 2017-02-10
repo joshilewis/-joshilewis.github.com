@@ -1,11 +1,13 @@
 =The States, Interactions and Outcomes Model=
 
-**TL;DR:**  The States, Interactions and Outcomes model provides a way for cross-functional teams to collaboratively explore, specify and document expected system behaviour. This article contains a worked example illustrating the model, and the thinking that led to the creation of the model.
+**TL;DR:**  The States, Interactions and Outcomes model provides a way for cross-functional teams to collaboratively explore, specify and document expected system behaviour. 
 
 --------
 
+Specification by Example (SbE) and Behaviour-Driven Development (BDD) can be an incredibly effective way for teams to explore and define their expectations for the behaviour of a system. The States, Interactions and Outcomes Model provides a set of steps, and a lightweight documentation structure for teams to use SbE and BDD more effectively. The best way of conveying the model is through a worked example.
+
 **Worked example**
-To demonstrate the model and the process, I will take you through applying it to a problem I use frequently in coaching and training. Imagine we are creating software to calculate the total cost of purchased items at a point of sale. (This problem is inspired by [Dave Thomas' Supermarket Pricing Kata]().) You walk up to a till at a supermarket, hand the check-out person your items one-by-one, and the checkout person starts calculating the total of the items you want to purchase. The total is updated each time the checkout person records an item for purchase.
+To demonstrate the model and the process, I will take you through applying it to a problem I use frequently in coaching and training. Imagine we are creating software to calculate the total cost of purchased items at a point of sale. (This problem is inspired by [Dave Thomas' Supermarket Pricing Kata](http://codekata.com/kata/kata01-supermarket-pricing/) and [here](http://codekata.com/kata/kata09-back-to-the-checkout/).) You walk up to a till at a supermarket, hand the check-out person your items one-by-one, and the checkout person starts calculating the total of the items you want to purchase. The total is updated each time the checkout person records an item for purchase.
 
 We would like to include a number of different ways of calculating the total price for purchased items, since the supermarket will want to run promotions from time to time. Some of the pricing methods we would like to include are:
 
@@ -19,7 +21,7 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 **Simple Pricing**  
 * **System boundaries**: We are concerned only with the way the total for the purchased items is calculated. We are not concerned with things like how the cost of an item is acquired (e.g. barcode scanning), accepting payment etc.  
 * **Types of inputs**: For Simple Pricing, the only input is the price of the item being recorded - *item price*.   
-* **Types of state**: Besides inputs, what affects calculating the total price? For Simple Pricing, the total after recording an item - the new total - is determined by both the price of the captured item, as well as the total before the item is captured. Therefore state consists of *current total*.  
+* **Types of state**: What affects calculating the total price besides *item price*? For Simple Pricing, the total after recording an item - the new total - is determined by both the price of the captured item, as well as the total before the item is captured. Therefore state consists of *current total*.  
 * **Outcome dimensions**: For Simple Pricing, the outcome consists only of the total calculated as a result of capturing an item - *new total*.  
 * **Possible values for state types**: *Current total* is an integer, which can be negative, 0, or positive.   
 * **Possible values for inputs**: *Item price* is an integer, which can be negative, 0, or positive.  
@@ -38,8 +40,8 @@ In this article I will deal with only 'Simple Pricing' and 'Three-for-Two Promot
 
 **Three-for-Two Promotion**  
 * **System boundaries**: The system boundaries don't change compared to Simple Pricing.
-* **Types of inputs**: For Three-for-Two Promotion, besides the price of the item being recorded, the type or name of the item is now also required as an input - *item type*.   
-* **Types of state**: Besides *current total*, the outcome is also affected by two other types of state: the types of items already captured - *already captured items*; and the type of Promotion currently active - *Active Promotion*.
+* **Types of inputs**: For Three-for-Two Promotion the type or name of the item is now also required as an input - *item type*.   
+* **Types of state**: The outcome is now also affected by two other types of state: the types of items already captured - *already captured items*; and the type of Promotion currently active - *Active Promotion*.
 * **Outcome dimensions**: For Three-for-Two Promotion, the outcome consists of *new total*, as well as the new list of items that have been captured - *new captured items*.  
 * **Possible values for state types**: *Current total* is an integer, which can be negative, 0, or positive. *Active Promotion* is a complex type. It can be 'none' or a promotion for a specific type of item, e.g. 'Buy 3 Cokes, pay for 2'.
 * **Possible values for inputs**: *Item price* is an integer, which can be negative, 0, or positive. *Already captured items* specifies the quantity and types of items already captured.  
@@ -61,6 +63,8 @@ There are several interesting things about the specifications above to which I'd
  * The path to any particular state is clear and obvious
  * Should we want to, it would be easy to automate the verification of a system which should satisfy these specifications.
 
+ As mentioned above, I developed and use this model during my coaching and training. It has proven very effective for quickly exploring and documenting system behaviour. In some BDD Bootcamps, we have explored and specified legacy systems running in productions in about 3 hours. One of the ways this has proven useful is people in the bootcamp who have not worked on those particular systems gained a very thorough high-level overview of the *intention* of the system.
+
 **The Thinking Behind The Model** 
 The idea behind the model is that the outcome of a system interaction is a function of the interaction and the state of the system at the time of interaction. We can develop a complete and comprehensive specification of expected system behaviour by describing the expected outcome for every possible combination of state and interaction.
 
@@ -74,7 +78,7 @@ The worked example above follows these steps:
 7. For each combination of state and interaction, what is the expected outcome (including all dimensions)?
 
 **Specification by Example and Behaviour-Driven Development** 
-The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
+The model and the steps are largely based on the concepts of Specification by Example and Behaviour-Driven Development. Specification by Example (SBE) is the practice of specifying expected system behaviour using concrete values instead of natural-language descriptions. For more on Specification by Example,you can't do better than [Gojko Adzic's book](https://gojko.net/books/specification-by-example/). Behaviour-Driven Development (BDD) uses SBE. One of the reasons I use SBE is that it allows us to work with something tangible, instead of 'invisible ideas'. Some of the benefits of using BDD and SBE are:  
 
 * Getting feedback on the work from a wider audience earlier in the process.
 * Making edge cases more obvious. 

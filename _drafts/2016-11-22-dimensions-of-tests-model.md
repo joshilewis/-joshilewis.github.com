@@ -31,4 +31,4 @@ As the model shows, no test can ever maximise for all dimensions. Any test will 
 
 For example, if we need tests that give us information about the behaviour of the whole system, which will be valuable for a long time, we're most likely willing to compromise on speed of execution and variation. The trade-off is now explicit and *deliberate*. Traditionally we would have ruled out such a test immediately because it would take too long to run.
 
-The way I see the model being used is for teams to decide what system feedback they're missing, decide what trade-offs to make, and then what kind of tests to write.
+The way I'd like to see the model being used is for teams to decide what system feedback they're missing, decide what trade-offs to make, and then what kind of tests to write.

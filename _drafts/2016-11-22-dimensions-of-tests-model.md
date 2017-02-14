@@ -21,17 +21,12 @@ Focusing on technical considerations only leads us to make blind trade-offs: we'
 
 The dimensions I think are most important are:  
  * **Speed**: How quickly does the test execute? How long do we have to wait to get the feedback the test gives us?   
- * **Coverage**:  How much of the system (vertically) does the test exercise? In general, the higher the coverage, the more confident we are about the behaviour of the system as whole. Also known as *scope* or *depth*.
- * **Longevity**: For how long do we expect the information provided by this test to be of value? In general, the longevity of a test is related to how many people are interested in the information provided by the test (audience).  
  * **Variation**:  How many near-identical variations of the test are there? E.g. if a test has lots of inputs, there may be very many combinations of inputs, with each combination requiring its own test. ([This article](http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam-part-1) is useful for more on this idea.)
 
-In an ideal world, every test would execute instantaneously, cover the entire system, and would be valuable forever. A suite of such tests would also cover every combination of inputs and states as well. Therefore, the ideal test would score very highly in all dimensions. Unfortunately this is not possible in the real world since some of the dimensions have an inverse affect on others. The image below is a causal loop diagram showing the causal relationships between dimensions.
 
 ![Causal Loop Diagram](dimensions-of-tests-causal-loop.png)
 
  * An increase in *Coverage* generally leads to a decrease in *speed of feedback*. This is because the more of the system covered by the test, the longer the test takes to run.   
- * An increase in *Coverage* generally leads to an increase in *Longevity*. This is because tests which exercise most or all of the system are generally less coupled to the implementation, and are written in higher-level (domain) language which will not change frequently, and is also valuable to a very wide audience. Inversely, lower Coverage leads to lower *Longevity* since low-coverage tests are more coupled to low-level component design, which changes more frequently.
- * An increase in *Variation* generally leads to a decrease in coverage. This is because with high variation, we will have a large number of tests. They must be low-coverage in the interests of time.
 
 As the model shows, no test can ever maximise for all dimensions. Any test will compromise on some of the dimensions. We therefore need to choose which dimension to prioritise for a test. This is the trade-off. Each test should prioritise one of the dimensions. The trade-off of priorities should be based on what feedback about the system we need. 
 

@@ -9,13 +9,13 @@ The current thinking in the software development industry is to have a lot of lo
 
 This kind of thinking generally focuses on how quickly the tests run - i.e. speed of feedback - and also how easy it is to write the different types of tests. Both of these are technical considerations. The problem I have with this thinking is it ignores the primary reason we have tests in the first place - to get feedback about our system. If technical considerations govern the types of tests we have, there may be a large number of tests we will never write, and thus a lot of feedback we're not getting. For example, having lots of low-level unit tests doesn't give us any information about how the components in a system work together as a whole. Evidence of this phenomenon is the multitude of memes around unit testing not being enough. Some of my favourites (click the pictures for the original Tweets):  
 
-<a href="https://twitter.com/kentcdodds/status/628658648001048577"><img src="https://joshilewis.files.wordpress.com/2017/02/cllxtwaumaavbkv.png" alt="Unit testers be like" width="274" height="200" /></a>
+<a href="https://twitter.com/kentcdodds/status/628658648001048577"><img src="https://pbs.twimg.com/tweet_video_thumb/CLlxtWaUMAAVBKv.png" alt="Unit testers be like" width="274" height="200" /></a>
 
-<a href="https://twitter.com/timbray/status/822470746773409794"><img src="https://joshilewis.files.wordpress.com/2017/02/c2oaur4ucae-qaf.jpg" alt="c2oaur4ucae-qaf" width="274" height="192" /> </a>
+<a href="https://twitter.com/timbray/status/822470746773409794"><img src="https://pbs.twimg.com/media/C2oAur4UcAE-QaF.jpg" alt="Two unit tests, no integration tests." width="274" height="192" /> </a>
 
-<a href="https://twitter.com/withzombies/status/829716565834752000"><img src="https://joshilewis.files.wordpress.com/2017/02/c4uyjv4wyaaerip.jpg" alt="c4uyjv4wyaaerip" width="274" height="274" /> </a>
+<a href="https://twitter.com/DJDoubleH/status/830125246648872960"><img src="https://pbs.twimg.com/tweet_video_thumb/C4UyJv4WYAAerIp.jpg" alt="there is no functional purpose for this but I would never throw it away" width="274" height="274" /> </a>
 
-<a href="https://twitter.com/zmcartor/status/830224893392408580"><img src="https://joshilewis.files.wordpress.com/2017/02/ykbai4apoxbdakok.jpg" alt="ykbai4apoxbdakok" width="274" height="274" /> </a>
+<a href="https://twitter.com/withzombies/status/829716565834752000"><img src="https://pbs.twimg.com/ext_tw_video_thumb/829716507752017920/pu/img/YkBai4ApoXBdAkOK.jpg" alt="Unit tests pass, no integration tests" width="274" height="274" /> </a>
 
 Focusing on technical considerations only leads us to make blind trade-offs: we're not even aware of other dimensions we should be considering when deciding which tests to write. The Dimensions of Tests Model was developed to make other dimensions explicit and to help teams make better trade-offs around the types of tests they write. The model is predicated on the idea that *different tests are valuable to different audiences at different times, for different reasons*.
 

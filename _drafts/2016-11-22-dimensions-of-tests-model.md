@@ -1,6 +1,6 @@
 =The Dimensions of Tests Model=
 
-**TL;DR:** Software developers often decide what tests to write based on technical aspects. Instead they should what tests to write based on what feedback is missing. The Dimensions of Tests Model can be used to make better decisions around what tests to write.  Useful dimensions to use when deciding what type of tests you should write are primarily: speed of feedback, coverage, longevity and variation.  
+**TL;DR:** Software developers often decide what tests to write based on technical aspects. Instead they should decide what tests to write based on what feedback is missing. The Dimensions of Tests Model can be used to make better decisions around what tests to write.  Useful dimensions to use when deciding what type of tests you should write are primarily: speed of feedback, coverage, longevity and variation.  
 
 --------
 The current thinking in the software development industry is to have a lot of low-level unit tests, fewer integration tests, and fewer still, higher-level tests like system tests. The Test Pyramid, shown below, is a common model used to describe the relative amounts or ratios of the different types of tests we should aim for. 
@@ -19,7 +19,7 @@ This kind of thinking generally focuses on how quickly the tests run - i.e. spee
 
 Focusing on technical considerations only leads us to make blind trade-offs: we're not even aware of other dimensions we should be considering when deciding which tests to write. The Dimensions of Tests Model was developed to make other dimensions explicit and to help teams make better trade-offs around the types of tests they write. The model is predicated on the idea that *different tests are valuable to different audiences at different times, for different reasons*.
 
-The dimensions I think are most important are:  
+The dimensions currently in the model are:  
  * **Speed**: How quickly does the test execute? How long do we have to wait to get the feedback the test gives us?   
  * **Coverage**:  How much of the system (vertically) does the test exercise? In general, the higher the coverage, the more confident we are about the behaviour of the system as whole. Also known as *scope* or *depth*. 
  * **Variation**:  How many near-identical variations of the test are there? E.g. if a test has lots of inputs, there may be very many combinations of inputs, with each combination requiring its own test. ([This article](http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam-part-1) is useful for more on this idea.)

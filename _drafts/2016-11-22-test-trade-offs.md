@@ -6,7 +6,7 @@
 The current thinking in the software development industry is to have a lot of low-level unit tests, fewer integration tests, and even fewer higher-level tests like system or end-to-end tests. The Test Pyramid, shown below, is a common model used to describe the relative amounts or ratios of the different types of tests we should aim for. 
 
 <div style="text-align:center">
-<img src="traditional-test-pyramid.png" alt="Traditional Test Pyramid" />
+<img src="https://joshilewis.files.wordpress.com/2017/02/traditional-test-pyramid.png" alt="Traditional Test Pyramid" />
 </div>
 
 This kind of thinking generally focuses on how quickly the tests run - i.e. speed of feedback - and also how easy it is to write the different types of tests. Both of these are technical considerations. The problem I have with this thinking is it ignores the primary reason we have tests in the first place - to get feedback about our system. If technical considerations govern the types of tests we have, there may be a large number of tests we will never write, and thus a lot of feedback we're not getting. For example, having lots of low-level unit tests doesn't give us any information about how the system works as a whole. Evidence of this phenomenon is the multitude of memes around *unit testing not being enough*. Some of my favourites (click the pictures for the original Tweets):  
@@ -39,7 +39,7 @@ The dimensions currently in the model are:
 In an ideal world, our tests would execute instantaneously, cover the entire system, and would deal every combination of inputs and states as well. Therefore, the ideal test would score very highly in all dimensions. Unfortunately this is not possible in the real world since some of the dimensions have an inverse affect on others. The image below is a causal loop diagram showing the causal relationships between dimensions.
 
 <div style="text-align:center">
-<img src="test-trade-offs-causal-loop.png" alt="Causal Loop Diagram" />
+<img src="https://joshilewis.files.wordpress.com/2017/02/dimensions-of-tests-causal-loop1.png" alt="Causal Loop Diagram" />
 </div>
 
  * An increase in *Coverage* generally leads to a decrease in *speed of feedback*. This is because the more of the system covered by the test, the longer the test takes to run.   

@@ -54,4 +54,4 @@ The way I'd like to see the model being used is for teams to decide what system 
 I believe this to be the the first iteration of the model, I expect it to evolve. I'm certain there are other dimensions I haven't yet included, perhaps even more important dimensions. What dimensions do you use when deciding what type of tests to write? What dimensions do you think should be added to the model? 
 
 **Acknowledgement**
-I would like thank [Louise Perold](https://twitter.com/lperold), [Jacques de Vos]https://twitter.com/jacdevos() and [Cindy Carless](https://twitter.com/ccarless) who helped me refine my thinking around this model and who helped improve this article.
+I would like thank [Louise Perold](https://twitter.com/lperold), [Jacques de Vos](https://twitter.com/jacdevos) and [Cindy Carless](https://twitter.com/ccarless) who helped me refine my thinking around this model and who helped improve this article.

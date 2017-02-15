@@ -1,15 +1,15 @@
 =Test Trade-Offs=
 
-**TL;DR:** Software developers often decide what tests to write based on technical aspects. Instead they should decide what tests to write based on what feedback is missing. The Dimensions of Tests Model can be used to make better decisions around what tests to write.  Useful dimensions to use when deciding what type of tests you should write are primarily: speed of feedback, coverage, longevity and variation.  
+**TL;DR:** Software developers often decide what tests to write based on technical considerations. Instead they should decide what tests to write based on what feedback is missing. The Test Trade-Offs Model can be used to make better decisions around what tests to write.  Useful dimensions to use when deciding what type of tests you should write are primarily: speed of feedback, coverage and variation.  
 
 --------
-The current thinking in the software development industry is to have a lot of low-level unit tests, fewer integration tests, and fewer still, higher-level tests like system tests. The Test Pyramid, shown below, is a common model used to describe the relative amounts or ratios of the different types of tests we should aim for. 
+The current thinking in the software development industry is to have a lot of low-level unit tests, fewer integration tests, and even fewer higher-level tests like system or end-to-end tests. The Test Pyramid, shown below, is a common model used to describe the relative amounts or ratios of the different types of tests we should aim for. 
 
 <div style="text-align:center">
 <img src="traditional-test-pyramid.png" alt="Traditional Test Pyramid" />
 </div>
 
-This kind of thinking generally focuses on how quickly the tests run - i.e. speed of feedback - and also how easy it is to write the different types of tests. Both of these are technical considerations. The problem I have with this thinking is it ignores the primary reason we have tests in the first place - to get feedback about our system. If technical considerations govern the types of tests we have, there may be a large number of tests we will never write, and thus a lot of feedback we're not getting. For example, having lots of low-level unit tests doesn't give us any information about how the components in a system work together as a whole. Evidence of this phenomenon is the multitude of memes around unit testing not being enough. Some of my favourites (click the pictures for the original Tweets):  
+This kind of thinking generally focuses on how quickly the tests run - i.e. speed of feedback - and also how easy it is to write the different types of tests. Both of these are technical considerations. The problem I have with this thinking is it ignores the primary reason we have tests in the first place - to get feedback about our system. If technical considerations govern the types of tests we have, there may be a large number of tests we will never write, and thus a lot of feedback we're not getting. For example, having lots of low-level unit tests doesn't give us any information about how the system works as a whole. Evidence of this phenomenon is the multitude of memes around *unit testing not being enough*. Some of my favourites (click the pictures for the original Tweets):  
 
 <div style="float:left">
 <a href="https://twitter.com/kentcdodds/status/628658648001048577"><img src="https://joshilewis.files.wordpress.com/2017/02/cllxtwaumaavbkv2.png" alt="Unit testers be like" width="274" height="200" /></a>
@@ -29,11 +29,11 @@ This kind of thinking generally focuses on how quickly the tests run - i.e. spee
 
 <div style="clear:both"></div>
 
-Focusing on technical considerations only leads us to make blind trade-offs: we're not even aware of other dimensions we should be considering when deciding which tests to write. The Dimensions of Tests Model was developed to make other dimensions explicit and to help teams make better trade-offs around the types of tests they write. The model is predicated on the idea that *different tests are valuable to different audiences at different times, for different reasons*.
+Focusing on technical considerations only leads us to make blind trade-offs: we're not even aware of other dimensions we should be considering when deciding which tests to write. The Test Trade-Offs Model was developed so that teams trade-offs when deciding which tests to write, by making other trade-of  dimensions explicit. The model is predicated on the idea that *different tests are valuable to different audiences at different times, for different reasons*.
 
 The dimensions currently in the model are:  
  * **Speed**: How quickly does the test execute? How long do we have to wait to get the feedback the test gives us?   
- * **Coverage**:  How much of the system (vertically) does the test exercise? In general, the higher the coverage, the more confident we are about the behaviour of the system as whole. Also known as *scope* or *depth*. 
+ * **Coverage**:  How much of the system (vertically) does the test exercise? In general, the higher the coverage, the more confident we are about the behaviour of the system as whole, since more of the system is being exercised. Coverage is also known as *scope* or *depth*. 
  * **Variation**:  How many near-identical variations of the test are there? E.g. if a test has lots of inputs, there may be very many combinations of inputs, with each combination requiring its own test. ([This article](http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam-part-1) is useful for more on this idea.)
 
 In an ideal world, our tests would execute instantaneously, cover the entire system, and would deal every combination of inputs and states as well. Therefore, the ideal test would score very highly in all dimensions. Unfortunately this is not possible in the real world since some of the dimensions have an inverse affect on others. The image below is a causal loop diagram showing the causal relationships between dimensions.

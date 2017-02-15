@@ -39,7 +39,7 @@ The dimensions currently in the model are:
 In an ideal world, our tests would execute instantaneously, cover the entire system, and would deal every combination of inputs and states as well. Therefore, the ideal test would score very highly in all dimensions. Unfortunately this is not possible in the real world since some of the dimensions have an inverse affect on others. The image below is a causal loop diagram showing the causal relationships between dimensions.
 
 <div style="text-align:center">
-<img src="dimensions-of-tests-causal-loop.png" alt="Causal Loop Diagram" />
+<img src="test-trade-offs-causal-loop.png" alt="Causal Loop Diagram" />
 </div>
 
  * An increase in *Coverage* generally leads to a decrease in *speed of feedback*. This is because the more of the system covered by the test, the longer the test takes to run.   

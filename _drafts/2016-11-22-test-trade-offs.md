@@ -1,4 +1,4 @@
-=The Dimensions of Tests Model=
+=Test Trade-Offs=
 
 **TL;DR:** Software developers often decide what tests to write based on technical aspects. Instead they should decide what tests to write based on what feedback is missing. The Dimensions of Tests Model can be used to make better decisions around what tests to write.  Useful dimensions to use when deciding what type of tests you should write are primarily: speed of feedback, coverage, longevity and variation.  
 
@@ -52,3 +52,6 @@ For example, if we need tests that give us information about the behaviour of th
 The way I'd like to see the model being used is for teams to decide what system feedback they're missing, decide what trade-offs to make, and then what kind of tests to write.
 
 I believe this to be the the first iteration of the model, I expect it to evolve. I'm certain there are other dimensions I haven't yet included, perhaps even more important dimensions. What dimensions do you use when deciding what type of tests to write? What dimensions do you think should be added to the model? 
+
+**Acknowledgement**
+I would like thank [Louise Perold](https://twitter.com/lperold), [Jacques de Vos]https://twitter.com/jacdevos() and [Cindy Carless](https://twitter.com/ccarless) who helped me refine my thinking around this model and who helped improve this article.

@@ -1,6 +1,6 @@
 = Technical Debt =
 
-**TL;DR**: Technical Debt occurs when we don't change our software based on what we've learned. There is no such thing as a perfect or even a good software design, there is only good enough. All designs are based on assumptions. These assumptions can be invalidated at any time. At some point interest on Technical Debt must be paid otherwise it becomes to difficult to change software. Code is never wrong or broken and it doesn't need to be fixed, it may need to be remodeled. The developers who wrote the code were not stupid or incompetent, they used the best design they could based on their understanding and context at the time.
+**TL;DR**: Technical Debt occurs when we don't change our software based on what we've learned. There is no such thing as a perfect or even a good software design, there is only good enough. All designs are based on assumptions. These assumptions can be invalidated at any time. At some point interest on Technical Debt must be paid otherwise it becomes too difficult to change the code. Code is never wrong or broken and it doesn't need to be fixed, it may need to be remodeled. The developers who wrote the code were not stupid or incompetent, they used the best design they could based on their understanding and context at the time.
 
 ---
 

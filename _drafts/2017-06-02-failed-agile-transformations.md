@@ -1,0 +1,29 @@
+= Failed & Failing Agile Transformations =
+
+**TL;DR**: The Agile Manifesto is a wonderful target value-system. It doesn't help you get started. For that you need a Shu-level practice. If you're 'doing Agile' the same way after a year, you've missed the point, especially if you changed the recipe at the beginning. Agility is a journey, not a destination. 'Agile' won't change anything for you, it will only highlight your system's obstacles to agility. What you do with that information is up to you. Agile practice recipes provide a framework for empirical inspect and adapt experiments.
+
+---
+
+This post is in response to several recent posts floating around that basically 'Agile is failing' and 'CTOs are losing faith in Agile'. 
+
+The Agile Manifesto is a wonderful description of a value system or mindset for organisations. However it is too abstract and conceptual to be used as a starting point. "Great, I'll value working software over comprehensive documentation, how does that help me when I get back to my desk the day after taining?". The Manifesto could be considered a 'cloud-level' concept in [Alistair Cockburn's Goal Level parlance](https://books.google.co.za/books?id=p-anAgAAQBAJ&lpg=PP1&dq=effective%20use%20cases&pg=PA61#v=onepage&q&f=false). Most organisations need fish- or clam-level practices as a start. They need a recipe they can start following tomorrow. Scrum is a good example of this in my opinion.
+
+The first problem usually encountered is that these fish- and clam-level recipes are presented as the sum total of 'Agile'. (In South Africa, and I think probably globally, there is a major conflation of the terms 'Scrum' and 'Agile'). This leads to Cargo-Cult Agile at best, where the organisations 'does Agile' but doesn't understand the reasoning behind the practices, and therefore doesn't gain any of the benefits promised by Agile.  Cargo-Cult Agile is a frequent result, even when its pointed out that Agile is much more than these starting recipes.
+
+Worse still, the organisation modifies the recipe at the very beginning because "that won't work here" or "we don't have the culture or maturity to do that". This is a symptom of not understanding the underlying reasons for the practice. Ron Jeffries has an [oldie but goodie take on this](http://ronjeffries.com/xprog/articles/jatbaseball/).
+
+What's lacking from the Manifesto is guidance around the journey to the lovely value system it describes. What's needed is a [Shu-Ha-Ri](https://martinfowler.com/bliki/ShuHaRi.html) framing of a 'journey to becoming more Agile'. Many of the common frameworks, like Scrum and SAFe, are **Shu-level recipes for organisations beginning their journey to become more Agile**. 
+
+There are several important things in this statement that we can unpack: **Agility is a journey, not a destination**. The recipe is only the **starting point**. At the beginning of the journey, you don't know or understand enough about the recipe to modify it (safely). That's why the recipe is so strict and prescriptive. The strict rules in the recipe are supposed to make you uncomfortable; they're supposed to be hard to adopt. If they weren't difficult, or if they didn't make you feel uncomfortable, that means your mindset is not being shifted.
+
+However, as stated above, the recipe is only the starting point. If you adopt a Shu-level recipe, and are doing it in the same way, with the same problems, a year after starting, you've missed the point. Organisations and people need somewhere to start, but they also need to **inspect and adapt** in a deliberate manner. The continuous improvement needs to be based on empirical experimentation. Scrum, SAFe etc provide frameworks that allow you to experiment and measure empirically; ie they provide answers for 'what can tweak and what should we measure?'. 
+
+I mentioned above that Shu-level recipes are intended to be uncomfortable. A lot of the practices in these recipes are forcing functions. They're there to act as a mirror of the system. The only thing these recipes promise is that if you operate in the way they dictate, you will come face to face with your obstacles to improvement very soon. If the recipe is modified, there's a good chance you won't become aware of these obstacles. If you don't adopt these practices, you don't have a basis on which to measure and tweak the system. You won't know if what you've changed has helped you progress to your target state or regress.
+
+'Agile' is not the end goal. No organisation wants to 'become Agile' for the sake of being Agile. They want to become Agile for other reasons. Agile is a way of operating the system, such that its clear how we measure the system and how we tweak it. You don't change your culture or increase your maturity to adopt Agile. This is putting the cart before the horse. You begin an Agile transformation in order to change your culture and increase your maturity.
+
+Most of the 'Agile has failed' pieces convey the message that 'Agile doesn't work'. My contention is that in these organisations, the journey to agility was started at the team level, with two days of training in Shu-level recipes only. Not only that, the Shu-level recipes were most likely modified as well. I assume that there was little training or reinforcement around the principles and values underlying these recipes. In this case, the failure can't be blamed on 'Agile', the failure is due to the way in which the organisation implemented their journey. 
+
+If you modify the starting point, and never progress beyond that starting point, you're not likely to end up where you want to be. If you don't start with the end in mind, and measure yourself against that end (the values and principles) often, you won't progress very far on your journey to agility.
+
+PS: An excellent meta-model for discussing whether you're stuck in a Cargo-Cult implementation is the [Spine Model](http://spinemodel.info/).

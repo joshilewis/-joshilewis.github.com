@@ -1,0 +1,25 @@
+{
+    "spellchecker.language": "en_US",
+    "spellchecker.ignoreWordsList": [
+        "colour",
+        "timeboxed",
+        "timebox",
+        "meetup",
+        "admin",
+        "spam",
+        "Behaviour",
+        "behaviour",
+        "memes",
+        "favourites",
+        "maximise",
+        "prioritise"
+    ],
+    "spellchecker.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellchecker.ignoreRegExp": [],
+    "spellchecker.ignoreFileExtensions": [],
+    "spellchecker.checkInterval": 5000
+}

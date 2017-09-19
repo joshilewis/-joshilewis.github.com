@@ -10,3 +10,5 @@ I no longer believe that there is much value in discussing whether something, e.
 Agile has become a goal in its own right, and has moved away from its origins as a guideline for a way of operating. Instead of asking "does this help me (or my client) achieve the outcomes we seek?", we're so caught up in debating what agile is or isn't, and spend a lot of time in _No True Scotsmen_ arguments. 
 
 Who cares if its agile? Are we moving in the direction of continuous improvement or not? Do we even know what continuous improvement means for us in our context? What would imrovement look like? How would we measure it? Would we know it if it bit us in the backside? The next time you hear, or say, "That's Not Agile!", stop. Ask yourself what's really being said and why.
+
+For what it's worth, my opinion is that any operating model that follows the 4 value statements described in the Manifesto is, by definition, agile. 

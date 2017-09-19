@@ -18,7 +18,7 @@ the right, we value the items on the left more.
 
 These statements provide guidelines for trade-off decisions we should be making. If you're in a situation where you can choose between working on either `working software` or `comprehensive documentation`, rather choose `working software`, especially if you don't yet have `working software`.  
 
-If you're in a situation where you have a plan but have discovered that the plan no longer makes sense, you can choose between either `following the plan` (even though you now know it no longer makes sense to do so), or `responding to the change`, the guidance from the Manifesto is to rather `respond to the change`. (I personally prefer `adapt to learning` over `respoding to change` but that's another story.)
+If you're in a situation where you have a plan but have discovered that the plan no longer makes sense, you can choose between either `following the plan` (even though you now know it no longer makes sense to do so), or `responding to the change`, the guidance from the Manifesto is to rather `respond to the change`. (I personally prefer `adapt to learning` over `responding to change` but that's another story.)
 
 The same thinking applies to the other two value statements: should you have to choose either `contract negotiation` or `customer collaboration`, rather choose the latter. If you need to choose between `processes and tools` and `individuals and interactions`, again rather choose the latter.
 

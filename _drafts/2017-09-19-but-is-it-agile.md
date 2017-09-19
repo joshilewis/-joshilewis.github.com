@@ -3,7 +3,7 @@
 
 ---
 
-I recently spoke at a community meetup on the topic _Agile Release Trains: Agile, or not so much?_. The talk had 2 parts, the first explaining what Agile Release Trains are; the second part discussing whether the question _But is it Agile?_ is a useful question to ask. In my [previous post (What is 'Agile')](https://joshilewis.wordpress.com/2017/09/19/what-is-agile/), I discussed my current interpretation of the [Manifesto for Agile Software Development](agilemanifesto.org) and what I believe 'Agile' means.  
+I recently spoke at a community meetup on the topic _Agile Release Trains: Agile, or not so much?_. The talk had 2 parts, the first explaining what Agile Release Trains are; the second part discussing whether the question _But is it Agile?_ is a useful question to ask. In my [previous post (What is 'Agile')](https://joshilewis.wordpress.com/2017/09/19/what-is-agile/), I discussed my current interpretation of the [Manifesto for Agile Software Development](https://agilemanifesto.org) and what I believe 'Agile' means.  
 
 I no longer believe that there is much value in discussing whether something, e.g. Agile Release Trains, is Agile or not. The term 'Agile' has become a misnomer, a red herring. It has become the tail wagging the dog. In his [Agile Africa 2015 Keynote](https://www.youtube.com/watch?v=I3tTCuhO6ho), Kent Beck used the analogy of dogs and small children looking at the pointed finger, instead of what the finger is pointing at, to describe Agile. Alistair Cockburn, another Manifesto signatory has launched his own 'new branding': [_Heart of Agile_](http://heartofagile.com/). I assume this was because he was frustrated by what Agile had become.
 

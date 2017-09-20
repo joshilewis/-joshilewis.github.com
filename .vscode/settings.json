@@ -21,5 +21,6 @@
     ],
     "spellchecker.ignoreRegExp": [],
     "spellchecker.ignoreFileExtensions": [],
-    "spellchecker.checkInterval": 5000
+    "spellchecker.checkInterval": 5000,
+    "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
 }

@@ -1,8 +1,8 @@
-= The Essence of SAFe =  
-**TL;R**: Scaled Agile Framework (SAFe) can look quite complicated and intimating at first glance. However the essence of SAFe is pretty simple:  
- * Fractal Plan-Do-Check-Act feedback loops (Team and Program)
+# The Essence of SAFe  
+Scaled Agile Framework (SAFe) can look quite complicated and intimating at first glance. However the essence of SAFe is pretty simple:  
+ * Fractal Plan-Do-Check-Act feedback loops (Team- and Program-level)
  * Fractal levels of work filtering and prioritisation
- * Priority alignment at scale (ie across a large number of people)
+ * Priority alignment at scale (i.e. across a large number of people)
 
 ---
 
@@ -17,7 +17,6 @@ Around 6 months ago I got trained in Scaled Agile Framework (SAFe) and became ce
 SAFe does have a lot of roles and moving parts, there is no doubt. However I believe that the three things mentioned above form the core and essence of the framework. I certainly believe that most organisations, certainly those I've worked in, would benefit from all three of these structures and practices.
 
 Kent Beck is fond of saying:  
-```  
-Work on the most important thing until either its done or its no longer the most important thing
-```
-If you look closely at the three things above, you might find that they're simply ways of doing just this, when there are a large number of people working together.
+  >  Work on the most important thing until either its done or its no longer the most important thing
+
+If you look closely at the three things above, you might find that they're simply ways of doing just this, when there are a large number of people working together on the same thing.
